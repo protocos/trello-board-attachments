@@ -4,7 +4,7 @@ This project is a proof of concept for printing all cards on a given board that 
 
 # How does it work?
 
-It uses the Trello api and the python requests library to make a request, deserialize it into an object, and then traverse all cards for only the cards with attachments.
+It uses the Trello api and the python requests library to make a request, deserialize it into an object, traverse all cards and only print the names of those cards with attachments.
 
 # How to set up the project:
 
