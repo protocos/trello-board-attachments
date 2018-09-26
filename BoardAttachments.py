@@ -14,7 +14,7 @@ oauth_token = ''
 board_id = ''
 
 response = requests.get(
-    'https://api.trello.com/1/boards/' + board_id + '/cards?key=' + api_key + '&token=' + oauth_token)
+    'https://api.trello.com/1/boards/' + board_id + '/cards?fields=name,badges&key=' + api_key + '&token=' + oauth_token)
 
 cards = json2obj(response.content)
 for card in cards:
